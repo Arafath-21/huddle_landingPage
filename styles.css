@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container header{
+    background-color: hsl(193, 100%, 96%);
+    background-image: url(images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+.container header .heading{
+    display: flex;
+    justify-content: space-between;
+}
+.container header .heading img{
+margin: 40px 50px;
+width: 200px;
+height: 30px;
+}
+.container header .heading button{
+margin: 40px 50px;
+width: 200px;
+height: 50px;
+background-color: white;
+border-radius: 25px;
+border: none;
+}
+.container header .heading2{
+    display: flex;
+    justify-content: space-between;
+}
+.container header .heading2 .heading-text{
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 80px;
+}
+.container header .heading2 .heading-text h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.container header .heading2 .heading-text p{
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.container header .heading2 .heading-text p{
+    font-size: 13px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.container header .heading2 .heading-text button{
+    width: 300px;
+    height:50px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+.container header .heading2 img{
+    width: 600px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+/*main*/
+.container main{
+    height: 100%;
+
+}
+.container main .main{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 400px;
+    margin:100px auto;
+    box-shadow: 0 0 10px rgba(136, 136, 136,0.2);
+}
+.container main .main .main-text{
+width: 400px;
+margin-top: 100px;
+margin-left: 60px;
+}
+.container main .main .main-text h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.container main .main .main-text p{
+  line-height: 1.5rem;
+}
+.container main .main img{
+width: 400px;
+height: 400px;
+margin-right: 50px;
+
+}
+.container main .main:nth-child(2) .main-text{
+    width: 400px;
+    margin-top: 100px;
+    margin-right: 60px;
+    }
+.container main .main:nth-child(2) img{
+    width: 500px;
+    margin-left: 60px;
+
+
+
+}
+/*Footer*/
+.container footer{
+    background-color: hsl(192, 100%, 9%);
+    height: 300px;
+}
+.container footer .main-footer{
+text-align: center;
+background-color: white;
+width: 400px;
+height: 130px;
+margin: 100px auto;
+position: relative;
+top: -90px;
+box-shadow: 0 0 10px rgba(136, 136, 136,0.2);
+border-radius: 10px;
+    padding-top: 20px;
+    margin-top: 200px;
+}
+.container footer .main-footer button{
+    width: 200px;
+    height:50px;
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    margin-top: 20px;
+} 
+.container footer .footer-footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    position: relative;
+    top: -150px;
+    gap: 100px;
+}
+.container footer .footer-footer div 
+{
+    color: white;
+}
+.container footer .footer-footer div:first-child
+{
+  margin-left: 30px;
+  width: 400px;
+
+    
+}
+.container footer .footer-footer div:first-child h1
+{
+  font-size: 2rem
+}
+.container footer .footer-footer div:first-child img
+{
+  display: inline;
+  margin-right: 10px;
+}
+.container footer .footer-footer div:first-child p
+{
+  display: inline;
+  width: 400px;
+}
+.container footer .footer-footer div:nth-child(2) p
+{
+  width:200px;
+  font-size: 1rem;
+  margin: 30px auto;
+}
+.container footer .footer-footer div:nth-child(3) p
+{
+  width:200px;
+  font-size: 1rem;
+  margin: 30px auto;
+}
+.container footer .footer-footer div:nth-child(4) i{
+    border: 1px solid white;
+    width: 50px;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+@media screen and (max-width:375px){
+    .container header{
+        background-color: hsl(193, 100%, 96%);
+        background-image: url(images/bg-hero-mobile.svg);
+        background-repeat: no-repeat;
+        font-family: 'Poppins', sans-serif;
+        height: 100%;
+        width: 400px;
+    }
+    .container header .heading img{
+        height: 20px;
+        width: 100px;
+       
+        }
+    .container header .heading2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .container header .heading2 img{
+        width: 300px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+
+    }
+    .container main .main{
+        display: flex;
+        justify-content: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .container main .main img{
+        width: 300px;
+        height: 300px;
+       
+        margin: 20px auto;
+        
+        }
+        .container footer .main-footer{
+           
+            width: 300px;
+            height: 130px;
+            
+            }
+            .container footer .footer-footer {
+                display: grid;
+                grid-template-columns:1fr;
+                grid-template-rows:  repeat(4,1fr);
+                position: relative;
+                top: -150px;
+                gap: 10px;
+            }
+            .container footer{
+                background-color: hsl(192, 100%, 9%);
+                height: 100%;
+            }
+            .container footer .footer-footer div:nth-child(2) p
+            {
+              width:200px;
+              font-size: 1rem;
+              margin: 10px 25px;
+            }
+            .container footer .footer-footer div:nth-child(3) p
+            {
+              width:200px;
+              font-size: 1rem;
+              margin: 10px 25px;
+              position: relative;
+              top: -110px;
+            }
+            .container footer .footer-footer div:nth-child(4) {
+                margin: 10px auto;
+                position: relative;
+                top: -200px;
+                left: -50px;
+            }
+          
+}
